@@ -106,10 +106,17 @@ def main():
         print(f"Error: Found {len(r)} requests, but expected {m} requests.")
         return
 
+    #write to terminal for ease 
     print(f"FIFO  : {FIFO(k, r)}")
     print(f"LRU   : {LRU(k, r)}")
     print(f"OPTFF : {OPTFF(k, r)}")
 
+    #write to output file
+    output_name = input_.split('.')[0] + ".out"
+    with open(output_name, 'w') as f:
+        f.write(f"FIFO  : {FIFO(k, r)}\n")
+        f.write(f"LRU   : {LRU(k, r)}\n")
+        f.write(f"OPTFF : {OPTFF(k, r)}\n")
 
 if __name__ == "__main__":
     main()
