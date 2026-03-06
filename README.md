@@ -5,6 +5,7 @@ Devina Tikkoo, 61945909
 This program implements the FIFO, LRU, and OPTFF eviction policies for a cache with capacity k and requests m and counts the number of misses per policy. 
 
 ## Repository Structure 
+```text
 ProgAssign2
 ├── src
 │ └── cache_miss_sim.py
@@ -19,6 +20,7 @@ ProgAssign2
 │ └── test2.in
 │
 └── README.md
+```
 
 ## Initial Assumptions
 The input file will always contain k m in the first line and integer id requests r1 r2 ... rm on the second line. Additionally, k is always >=1 and r is always integers. 
